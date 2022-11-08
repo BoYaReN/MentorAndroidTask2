@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/outline_background">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/avatar_margin"
+        android:layout_marginTop="@dimen/avatar_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_contact_avatar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contactNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/avatarImageView"
+        app:layout_constraintTop_toTopOf="@id/avatarImageView"
+        app:layout_constraintEnd_toStartOf="@id/trashImageView"
+        android:textSize="18sp"
+        android:textColor="@color/text_name"
+        android:layout_marginStart="16dp"
+        android:text = "Bohdan Yaremchak"
+        android:fontFamily="@font/open_sans_regular"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contactCareerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/contactNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/contactNameTextView"
+        android:textSize="12sp"
+        android:textColor="@color/gray_main"
+        android:text = "Android developer"
+        android:fontFamily="@font/open_sans_regular"/>
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/trashImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_trash"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

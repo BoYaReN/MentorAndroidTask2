@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MentorAndroidTask2</string>
+
+    <string name="contacts">Контакти</string>
+    <string name="add_contacts">Додати контакти</string>
+</resources>
